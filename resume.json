@@ -1,120 +1,120 @@
 {
-    bio: {
-        firstName: "Jeff",
-        lastName: "Knupp",
-        email: {
-            work: "jknupp@appnexus.com", // e.g. thomas@facebook.com
-            personal: "jeff@jeffknupp.com" // thomas@gmail.com
+    "bio": {
+        "firstName": "Jeff",
+        "lastName": "Knupp",
+        "email": {
+            "work": "jknupp@appnexus.com", 
+            "personal": "jeff@jeffknupp.com" 
         },
-        phone: { // Phone numbers are stored as strings so use any format you like
-            work: "N/A", // e.g. 732-757-2923
-            personal: "609-425-8744" // e.g. 712-117-2923
+        "phone": { 
+            "work": "N/A", 
+            "personal": "609-425-8744" 
         },
-        summary: "I'm a professional sofware developer, author, speaker, and private Python tutor. He is the author of the popular Python book 'Writing Idiomatic Python'. I'm always looking for a new challenge.", // Write a short 2-3 sentence biography about yourself
-        location: {
-            city: "New York",
-            countryCode: "US", // e.g. US, AU, IN
-            region: string, // If you specify a region, you don't need a state e.g. Queensland
-            state: "NY" // If you specify a state, you don't need a region e.g. Texas
+        "summary": "I'm a professional sofware developer, author, speaker, and private Python tutor. He is the author of the popular Python book 'Writing Idiomatic Python'. I'm always looking for a new challenge.", 
+        "location": {
+            "city": "New York",
+            "countryCode": "US", 
+            "region": "", 
+            "state": "NY" 
         },
-        websites: { // The value you use as your key, will generally become the label
-            blog: "http://www.jeffknupp.com" // e.g. http://blog.joebloggs.com
+        "websites": { 
+            "blog": "http://www.jeffknupp.com"
         },
-        profiles: { // Specify any number of social networks that you participate in
-            twitter: "@jeffknupp", // e.g. neutralthoughts
-            github: "jeffknupp",
-            hackerNews: "jknupp",
-            stackOverflow: "jknupp",
-            reddit: "jknupp" // e.g. thomasdavis
+        "profiles": { 
+            "twitter": "@jeffknupp", 
+            "github": "jeffknupp",
+            "hackerNews": "jknupp",
+            "stackOverflow": "jknupp",
+            "reddit": "jknupp" 
         }
     },
-    work: [{
-        company: "Goldman Sachs & Co.", // e.g. Facebook
-        position: "Software Developer", // e.g. Software Engineer
-        website: "http://wwww.gs.com", // e.g. http://facebook.com
-        startDate: 2005-06-28, // resume.json uses the ISO 8601 date standard e.g. 2014-06-29
-        endDate: 2009-12-22, // e.g. 2012-06-29
-        summary: "Wrote high-frequency, ultra-low latency equity trading systems in C++.", // Give an overview of your responsibilities at the company
-        highlights: [ // Specify multiple accomplishments
+    "work": [{
+        "company": "Goldman Sachs & Co.", 
+        "position": "Software Developer", 
+        "website": "http://www.gs.com",
+        "startDate": "2005-06-28", 
+        "endDate": "2009-12-22", 
+        "summary": "Wrote high-frequency, ultra-low latency equity trading systems in C++.", 
+        "highlights": [ 
             "Part of team of 5 that designed and implemented Goldman's next-generation order management system, OM2.",
             "Lead project to migrate all of Goldman's Programatic Trading business onto the new OMS.",
-            "Mentored younger teammates in both official and unofficial capacity.", // e.g. Increased profits by 20% from 2011-2012 through viral advertising
+            "Mentored younger teammates in both official and unofficial capacity."
             ]
     },
     {
-        company: "Wells Fargo", // e.g. Facebook
-        position: "Senior Software Developer", // e.g. Software Engineer
-        website: "http://wwww.wellsfargo.com", // e.g. http://facebook.com
-        startDate: 2009-12-22, // resume.json uses the ISO 8601 date standard e.g. 2014-06-29
-        endDate: 2013-03-25, // e.g. 2012-06-29
-        summary: "Lead developer on C++ OMS team. Designed and implemented next-generation OMS from scratch with team of four.", // Give an overview of your responsibilities at the company
-        highlights: [ // Specify multiple accomplishments
+        "company": "Wells Fargo", 
+        "position": "Senior Software Developer", 
+        "website": "http://www.wellsfargo.com",
+        "startDate": "2009-12-22", 
+        "endDate": "2013-03-25", 
+        "summary": "Lead developer on C++ OMS team. Designed and implemented next-generation OMS from scratch with team of four.", 
+        "highlights": [ 
             "Lead developer on team responsible for sucessfully writing from scratch a distributed, sub-millisecond OMS.",
             "Developed a release management system in spare time and moved group onto it. Now used by most front-office teams.",
             "Lead a number of projects aimed at improving regulatory compliance by working with compliance, back office, QA teams.",
-            "Undertook many successful, self-directed reasearch projects that optimized various components in OMS using template metaprogramming, profiling, kernel-level optimization, etc."// e.g. Increased profits by 20% from 2011-2012 through viral advertising
+            "Undertook many successful, self-directed reasearch projects that optimized various components in OMS using template metaprogramming, profiling, kernel-level optimization, etc."
             ]
     },
     {
-        company: "AppNexus", // e.g. Facebook
-        position: "Team Lead, Senior Software Developer", // e.g. Software Engineer
-        website: "http://wwww.appnexus.com", // e.g. http://facebook.com
-        startDate: 2013-03-25, // resume.json uses the ISO 8601 date standard e.g. 2014-06-29
-        endDate: "N/A", // e.g. 2012-06-29
-        summary: "Team lead on both Data Team (Hadoop, Hive, Vertica, Netezza, etc.) and Fraud Engineering Team"
-        highlights: [ // Specify multiple accomplishments
+        "company": "AppNexus", 
+        "position": "Team Lead, Senior Software Developer", 
+        "website": "http://www.appnexus.com",
+        "startDate": "2013-03-25", 
+        "endDate": "N/A", 
+        "summary": "Team lead on both Data Team (Hadoop, Hive, Vertica, Netezza, etc.) and Fraud Engineering Team",
+        "highlights": [ 
             "Successfully designed and implemented a system and REST API responsible for scheduling data pipeline jobs and reporting state of pipeline (Python, Flask)",
             "Simplified and re-wrote Anti-Fraud Technology Platform, resulting in increased functionality, decreased complexity, and greater customer confidence",
-            "One of four initial 'Engineering Leads' (company-wide) on major cross-functional engineering project. Sucessfully added support for and automation of external network mediation data.", 
+            "One of four initial 'Engineering Leads' (company-wide) on major cross-functional engineering project. Sucessfully added support for and automation of external network mediation data."
             ]
     }],
-    education: [{
-        institution: "Carnegie Mellon University", // e.g. Massachusetts Institute of Technology
-        area: "Information Systems", // e.g. Arts
-        studyType: "Bachelor", // e.g. Bachelor
-        startDate: 2000-08-15, // e.g. 2014-06-29
-        endDate: 2005-05-20, // e.g. 2012-06-29
-        courses: [ // List an notable courses/subjects
-            ]
-    },
-    {
-        institution: "Carnegie Mellon University", // e.g. Massachusetts Institute of Technology
-        area: "Computer Science", // e.g. Arts
-        studyType: "Minor", // e.g. Bachelor
-        startDate: 2000-08-15, // e.g. 2014-06-29
-        endDate: 2005-05-20, // e.g. 2012-06-29
-        courses: [ // List an notable courses/subjects
+    "education": [{
+        "institution": "Carnegie Mellon University", 
+        "area": "Information Systems", 
+        "studyType": "Bachelor", 
+        "startDate": "2000-08-15", 
+        "endDate": "2005-05-20", 
+        "courses": [ 
             ]
     },
     {
-        institution: "Carnegie Mellon University", // e.g. Massachusetts Institute of Technology
-        area: "Master of Information Systems Management", // e.g. Arts
-        studyType: "Masters", // e.g. Bachelor
-        startDate: 2003-08-15, // e.g. 2014-06-29
-        endDate: 2005-05-20, // e.g. 2012-06-29
-        courses: [ // List an notable courses/subjects
+        "institution": "Carnegie Mellon University", 
+        "area": "Computer Science", 
+        "studyType": "Minor", 
+        "startDate": "2000-08-15", 
+        "endDate": "2005-05-20", 
+        "courses": [ 
+            ]
+    },
+    {
+        "institution": "Carnegie Mellon University", 
+        "area": "Master of Information Systems Management", 
+        "studyType": "Masters", 
+        "startDate": "2003-08-15", 
+        "endDate": "2005-05-20", 
+        "courses": [ 
             ]
     }],
-    awards: [{ // Specify any awards you have received throughout your professional career
-        title: "Keynote Speaker", // e.g. One of the 100 greatest minds of the century
-        awardDate: 2014-05-05, // e.g. 1989-06-12
-        awarder: "PyGrunn (Netherlands)" // e.g. Time Magazine
+    "awards": [{ 
+        "title": "Keynote Speaker", 
+        "awardDate": "2014-05-05", 
+        "awarder": "PyGrunn (Netherlands)" 
     },
-    { // Specify any awards you have received throughout your professional career
-        title: "Speaker", // e.g. One of the 100 greatest minds of the century
-        awardDate: 2014-07-15, // e.g. 1989-06-12
-        awarder: "Wharton Web Conference",// e.g. Time Magazine
+    { 
+        "title": "Speaker", 
+        "awardDate": "2014-07-15", 
+        "awarder": "Wharton Web Conference"
     }],
-    publications: [{ // Specify your publications through your career
-        name: "Writing Idiomatic Python", // e.g. The World Wide Web
-        publisher: "No Starch Press", // e.g. IEEE, Computer Magazine
-        releaseDate: "2014-12-01", // e.g. 1990-08-01
-        website: "http://www.jeffknupp.com/writing-idiomatic-python-ebook/" // e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html
+    "publications": [{ 
+        "name": "Writing Idiomatic Python", 
+        "publisher": "No Starch Press", 
+        "releaseDate": "2014-12-01", 
+        "website": "http://www.jeffknupp.com/writing-idiomatic-python-ebook/"
     }],
-    skills: [{ // List out your professional skill-set
-        name: "Software Developer", // e.g. Web Development
-        level: "Master", // e.g. Master
-        keywords: [ // List some keywords pertaining to this skill
+    "skills": [{ 
+        "name": "Software Developer", 
+        "level": "Master", 
+        "keywords": [ 
             "Python",
             "C++",
             "Django",
@@ -146,17 +146,17 @@
             "Go",
             "Golang",
             "Continuous Integration",
-            "Automated Testing"// e.g. HTML
+            "Automated Testing"
             ]
     }],
-    hobbies: [{
-        name: string, // e.g. Philosophy
-        keywords: [
-            string // e.g. Friedrich Nietzsche
+    "hobbies": [{
+        "name": "", 
+        "keywords": [
+            "" 
             ]
     }],
-    references: [{ // List references you have received
-        name: string, // e.g. Timothy Cook
-        reference: string // e.g. Joe blogs was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing.
+    "references": [{ 
+        "name": "", 
+        "reference": "" 
     }]
 }
